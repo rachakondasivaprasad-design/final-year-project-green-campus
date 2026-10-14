@@ -1,0 +1,25 @@
+{
+  "name": "green-campus-monitoring-system",
+  "version": "1.0.0",
+  "description": "AI-Based Smart Green Campus Management and Environmental Monitoring System",
+  "main": "server/server.js",
+  "scripts": {
+    "install:all": "cmd /c \"npm install && cd server && npm install && cd ../client && npm install\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "cd server && npm run seed"
+  },
+  "keywords": [
+    "green-campus",
+    "environmental-monitoring",
+    "ai",
+    "mern",
+    "dashboard"
+  ],
+  "author": "Antigravity AI",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
